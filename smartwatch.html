@@ -1,39 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="smartwatch.css">
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <img src="./images/google-logo.png" alt="google" />
-        <div>
-    <p>Phone</p>
-<p>Earbuds</p>
-<p>Watches</p>
-<p>Smart Home</p>
-<p>Accesories</p>
-<p>Subscriptions</p></div>
-<div class="icons">
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-</div>
-      </nav>
-    </header>
-    <main>
-      <section></section>
-      <section></section>
-    </main>
-    <aside>
-      <section></section>
-      <section></section>
-      <section></section>
-    </aside>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="smartwatch.css">
+  <title>Google Store</title>
+</head>
+
+<body>
+  <header class="header text">
+    <nav class="navbar-container">
+      <div class="hamburger"><i class="fi fi-rr-menu-burger"></i></div>
+      <div class="navbar">
+        <img class="logo" src="./images/google-logo.png" alt="google" />
+        <a href="#">Phone</a>
+        <a  href="earbuds.html">Earbuds</a>
+        <a class="active" href="smartwatch.html">Watches</a>
+        <a href="#">Smart Home</a>
+        <a href="#">Accesories</a>
+        <a href="#">Subscriptions</a>
+      </div>
+      <div class="icons">
+        <img src="./icons/Search.svg">
+        <img src="./icons/Help.svg">
+        <img src="./icons/Cart.svg">
+        <img src="./icons/Avatar.svg">
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="product">
+      <p class="text"> 🡠 See products details</p>
+      <div class="main-img">
+        <img src="./images/smartwatch/smartwatch_black.png" alt="smartwatch_black">
+      </div>
+    </section>
+    <section class="product-detail">
+      <div>
+        <p class="titles bold">Fitbit Inspire 3</p>
+        <p class="text">Health and Fitness Tracker</p>
+        <p class="subtitles bold">99,95€</p>
+        <hr>
+      </div>
+      <p class="text">Choose a color</p>
+      <div class="detail-container">
+        <div class="smartwatch-box">
+          <div class="image-container">
+            <img class="small-img" src="./images/smartwatch/smartwatch_black.png"
+              alt="smartwatch_black">
+            <p class="text">Midnight Zen</p>
+          </div>
+        </div>
+        <div class="smartwatch-box">
+          <div class="image-container">
+            <img class="small-img" src="./images/smartwatch/smartwatch_pink.png"
+              alt="smartwatch_pink">
+            <p class="text">Lilac Bliss</p>
+          </div>
+        </div>
+        <div class="smartwatch-box">
+          <div class="image-container">
+            <img class="small-img" src="./images/smartwatch/smartwatch_yellow.png"
+              alt="smartwatch_yellow">
+            <p class="text">Morning Glow</p>
+          </div>
+        </div>
+      </div>
+        <div class="gray-background">
+          <p class="titles bold">99,95€</p>
+          <hr>
+          <div class="option-container">
+            <select name="select" class="text">
+              <option value="value1" selected> 1</option>
+              <option value="value2"> 2</option>
+              <option value="value3"> 3</option>
+            </select>
+            <button type="submit" class="text-bold">Add to Cart</button>
+          </div>
+          <p class="delivery text-bold bold"><img src="./icons/Delivery.svg" alt="delivery">Delivers 29
+            Apr to <span>08023</span></p>
+        </div>
+
+  </main>
+  <footer>
+    <div class="social-media">
+      <img src="./icons/SM-x.svg" alt="twitter">
+      <img src="./icons/SM-instagram.svg" alt="instagram">
+      <img src="./icons/SM-facebook.svg" alt="facebook">
+      <img src="./icons/SM-youtube.svg" alt="youtube">
+      <img src="./icons/SM-tiktok.svg" alt="tiktok">
+    </div>
+    <div class="footer-text">
+     <img class="flag" src="./icons/Spain.svg" alt="spain_flag">
+      <p>Spain</p>
+      <p>Privacy</p>
+      <p>Google Nest Commitment to Privacy</p>
+      <p>Sales Terms</p>
+      <p>Terms of Service</p>
+    </div>
+  </footer>
+</body>
+
 </html>
