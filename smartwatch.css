@@ -432,11 +432,11 @@ footer {
     }
 
     .main-img img {
-        height: 10vh;
+        width: 30%;
+        height: 20vh;
     }
 
     .product-details {
-
         height: 20vh;
     }
 
