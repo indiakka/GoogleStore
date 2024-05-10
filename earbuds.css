@@ -1,45 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Major+Mono+Display&display=swap");
-html,
-body {
-  height: 100%;
-}
+
 body {
   background-color: #ffffff;
   font-family: Inter, sans-serif;
-  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
 }
 
-header {
-  background-color: transparent;
-  width: 100%;
-}
 nav {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 4px 0 #00000033;
   padding: 2px;
+  margin-bottom: 0.8rem;
 }
+
 .nav-left {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 .logo {
-  height: 25px;
-  width: 30px;
+  height: 2rem;
+  width: 2rem;
+  margin-right: -1rem;
 }
-
 .nav-list {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 15px;
+  gap: 1rem;
   font-family: Inter, sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #57626b;
   cursor: pointer;
+  margin-left: -1rem;
 }
+
 #earbuds {
   color: #1a73e8;
   font-weight: bold;
@@ -55,43 +54,41 @@ a:hover {
 }
 .icons {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
+  gap: 0.8rem;
   cursor: pointer;
 }
 
 main {
-  display: grid;
-  width: 100%;
-  height: 90%;
-  grid-template-columns: 15% 60% 25%;
-  justify-items: center;
-  align-items: center;
-}
-.main-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #57626b;
+}
+.center {
+  display: flex;
+  flex-direction: row;
+}
+
 .models {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
 }
 #model-earbud {
-  height: 35px;
-  width: 45px;
+  height: 3rem;
+  width: 3.5rem;
   border: 1px solid #353a49;
   border-radius: 50%;
-}
-#model-earbud:hover {
-  border: 1px solid #57626b;
+  cursor: pointer;
 }
 #central {
-  width: 70%;
+  width: 35rem;
   background-color: #f8f8fa;
 }
 #main-right {
@@ -102,16 +99,16 @@ main {
 }
 span {
   font-family: Inter, sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #57626b;
 }
 h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 h2,
-p {
+.price {
   font-weight: bold;
 }
 .colors {
@@ -120,47 +117,34 @@ p {
   flex-direction: row;
   gap: 8px;
 }
-#blue {
-  background-color: #9ec6ea;
+#blue,
+#white,
+#black,
+#grey,
+#green,
+#orange {
   height: 25px;
   width: 25px;
   border: 1px solid #353a49;
   border-radius: 50%;
+}
+#blue {
+  background-color: #9ec6ea;
 }
 #white {
   background-color: #e7e4df;
-  height: 25px;
-  width: 25px;
-  border: 1px solid #353a49;
-  border-radius: 50%;
 }
 #black {
   background-color: #4b4b4d;
-  height: 25px;
-  width: 25px;
-  border: 1px solid #353a49;
-  border-radius: 50%;
 }
 #grey {
   background-color: #d0d9d8;
-  height: 25px;
-  width: 25px;
-  border: 1px solid #353a49;
-  border-radius: 50%;
 }
 #green {
   background-color: #dfe5b7;
-  height: 25px;
-  width: 25px;
-  border: 1px solid #353a49;
-  border-radius: 50%;
 }
 #orange {
   background-color: #e58177;
-  height: 25px;
-  width: 25px;
-  border: 1px solid #353a49;
-  border-radius: 50%;
 }
 #delivery {
   background-color: #f8f8fa;
@@ -178,10 +162,10 @@ p {
 }
 select {
   border: 1px solid #57626b;
-  padding: 5px 15px;
+  padding: 0.3rem 1rem;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: center;
 }
 button {
@@ -189,40 +173,38 @@ button {
   color: white;
   border: none;
   margin-left: 5px;
-  padding: 15px 60px;
+  padding: 1rem 3.7rem;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: bold;
   transition: background-color 0.3s;
 }
-button:hover {
-  background-color: #3a79cc;
-}
+
 footer {
   background-color: #f8f8fa;
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
-  flex-shrink: 0;
 }
 
 .social-media {
   display: flex;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 0.6rem;
   cursor: pointer;
 }
 .footer-ul {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
   list-style: none;
-  gap: 15px;
+  gap: 1.2rem;
   font-family: Inter, sans-serif;
-  font-size: 10px;
+  font-size: 0.6rem;
   color: #57626b;
   cursor: pointer;
 }
+
