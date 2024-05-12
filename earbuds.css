@@ -40,22 +40,32 @@ nav {
   margin-left: -1rem;
 }
 
-#earbuds {
+.active-item {
   color: #1a73e8;
   font-weight: bold;
   text-decoration: none;
 }
-a {
+.smartwatch {
   text-decoration: none;
   font-family: inherit;
   color: inherit;
 }
-a:hover {
+.smartwatch:hover {
   font-weight: bold;
 }
 .icons {
   display: flex;
   gap: 0.8rem;
+  cursor: pointer;
+}
+
+.header-bottom {
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 0.75rem;
+  color: #57626b;
   cursor: pointer;
 }
 
@@ -67,22 +77,14 @@ main {
   height: 70%;
   width: 100%;
 }
-.top {
-  height: 40%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  font-size: 0.75rem;
-  color: #57626b;
-}
 
-#images-section {
+.images-section {
   display: flex;
   height: 100%;
   align-items: center;
 }
 
-.models {
+.samples {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -94,13 +96,13 @@ main {
   border-radius: 50%;
   cursor: pointer;
 }
-#central {
+.main-banner {
   width: 35rem;
   background-color: #f8f8fa;
   height: 80%;
   border-radius: 8px;
 }
-#right {
+.main-aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -154,7 +156,7 @@ h2,
 #orange {
   background-color: #e58177;
 }
-#delivery {
+.delivery {
   background-color: #f8f8fa;
   display: flex;
   flex-direction: column;
@@ -162,7 +164,7 @@ h2,
   height: 30%;
 }
 
-#add {
+.cart-form {
   display: flex;
   flex-direction: row;
   justify-content: flex-baseline;
@@ -199,18 +201,18 @@ footer {
   justify-content: space-around;
 }
 
-.social-media {
+.footer-icons {
   display: flex;
   justify-content: center;
   width: 25%;
   height: 100%;
   cursor: pointer;
 }
-#test {
+#social-media {
   max-width: 4%;
   margin-left: 2%;
 }
-.footer-ul {
+.footer-list {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
@@ -230,21 +232,21 @@ footer {
     height: 80%;
     top: 20%;
   }
-  #images-section {
+  .images-section {
     display: none;
   }
-  #central {
+  .main-banner {
     width: 80%;
     height: auto;
   }
-  #right {
+  .main-aside {
     width: 100%;
   }
   footer {
     height: 3%;
     align-items: flex-start;
   }
-  .footer-ul {
+  .footer-list {
     height: 100%;
   }
 }
@@ -256,10 +258,10 @@ footer {
   main {
     height: 70%;
   }
-  #central {
+  .main-banner {
     max-height: 30%;
   }
-  #add {
+  .cart-form {
     flex-direction: column;
   }
   #number {
@@ -271,14 +273,14 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .social-media {
+  .footer-icons {
     width: 80%;
     justify-content: space-evenly;
   }
-  #test {
+  #social-media {
     min-width: 8%;
   }
-  .footer-ul {
+  .footer-list {
     flex-direction: column-reverse;
   }
 }
